@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Calculadora de precios - Home</title>
+</head>
+<body>
+    <section class="secc-calculadora">
+        <h1>CALCULADORA RAPIDA</h1>
+        <div class="secc-calculadora-cont">
+            <div class="inputs">
+                <label for="inputPrecio">Precio x unidad: </label>
+                <input type="number" id="inputPrecio" required placeholder="Ingrese el precio unitario.">
+            </div>
+            <div class="inputs">
+                <label for="opcionIVA">¿Agregamos IVA? 21%</label>
+                <input id ="inputIVA" type="checkbox">
+            </div>
+            <div class="precio-text">
+                <p id="precioFinal"></p>
+            </div>
+        </div>
+    </section>
+
+<!-- SCRIPTS -->
+<script src="JS/calcular.js"></script>
+</body>
+</html>

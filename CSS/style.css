@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    background-color: black;
+}
+
+/* Contenedor general */
+.secc-calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: azure;
+}
+
+/* Contenedor de la calculadora */
+.secc-calculadora-cont{
+    width: 90%;           /* ocupa casi todo el ancho disponible */
+    max-width: 350px;     /* límite en PC */
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    padding: 20px;        /* más compacto */
+    box-sizing: border-box;
+}
+
+/* Inputs y etiquetas */
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.inputs label{
+    margin-bottom: 5px;
+    font-size: 0.9rem;    /* más pequeño */
+}
+
+.inputs input{
+    border: 2px solid rgb(127, 170, 170);
+    border-radius: 15px;
+    background-image: linear-gradient(120deg,#3c3c3c,#585858);
+    color: rgb(127, 170, 170);
+    cursor: pointer;
+    padding: 6px 10px;     /* más compacto */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;       /* más chico */
+    transition: all .3s;
+    box-sizing: border-box;
+}
+
+.inputs input:focus {
+    outline-color: rgb(127, 170, 170);
+}
+
+/* Título */
+.secc-calculadora h1{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Precio final */
+#precioFinal{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Media query para móviles muy pequeños (<360px) */
+@media (max-width: 360px){
+    .secc-calculadora{
+        max-width: 250px;
+    }
+
+    .secc-calculadora-cont{
+        width: 100px;
+    }
+}
+
+@media (max-width: 450px){
+    .secc-calculadora{
+        max-width: 200px;
+    }
+
+    .secc-calculadora-cont{
+        width: 180px;
+    }
+
+    .secc-calculadora h1{
+        font-size: 0.9rem;
+    }
+
+    .inputs label{
+        font-size: 0.6rem;
+    }
+}
