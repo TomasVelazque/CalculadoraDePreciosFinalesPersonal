@@ -71,7 +71,7 @@ body{
     font-size: 1rem;
 }
 
-/* Media query para móviles muy pequeños (<360px) */
+/* 
 @media (max-width: 360px){
     .secc-calculadora{
         max-width: 250px;
@@ -99,3 +99,4 @@ body{
         font-size: 0.6rem;
     }
 }
+*/
